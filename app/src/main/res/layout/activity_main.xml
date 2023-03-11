@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1A32A"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonpurple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonwhite"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#070907"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:onClick="onButtonPurple"
+        android:text="Purple"
+        android:textColor="@color/red"
+        android:textSize="48sp" />
+
+    <Button
+        android:id="@+id/buttonwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#9F8431"
+        android:onClick="onButtonWhite"
+        android:text="white"
+        android:textColor="#FDEE00"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/buttonblack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonwhite"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#EFECEC"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:onClick="onButtonBlack"
+        android:text="black"
+        android:textColor="@color/teal_200"
+        android:textSize="48sp" />
+</RelativeLayout>
